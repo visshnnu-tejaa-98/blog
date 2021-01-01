@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+/*
+/////////////////////////////////////
+navbar
+/////////////////////////////////////
+*/
+
+.bold{
+    font-weight: bolder;
+}
+.bold2{
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.github-icon{
+    font-size: 1.2rem;
+}
+.nav-padding1{
+    padding-top: 19%;
+}
+.nav-padding2{
+    padding-top: 17%;
+}
+
+/*
+/////////////////////////////////////
+bannar
+/////////////////////////////////////
+*/
+
+
+.bannar{
+    width: 100vw;
+    height: 65vh;
+    background: url("https://raw.githubusercontent.com/StartBootstrap/sb-clean-blog-angular/develop/src/assets/img/home-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.bannar-overlay{
+    width: 100vw;
+    height: 65vh;
+    background-color: rgba(0, 0, 0, 0.400);
+    position: relative;
+    color: white;
+    font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.bannar-overlay h1,.bannar-overlay p{
+    display: flex;
+    justify-content: center;
+}
+.bannar-heading{
+    font-size: 5.5rem;
+}
+.bannar-description{
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+/*
+/////////////////////////////////////
+divider
+/////////////////////////////////////
+*/
+
+.divider{
+    height: 100px;
+}
+
+
+/*
+/////////////////////////////////////
+section
+/////////////////////////////////////
+*/
+.margin{
+    width: 75%;
+}
+.article-description{
+    font-size: 1.9rem;
+}
+.margin:hover{
+    color: #17a2b8;
+}
+
+
+/*
+/////////////////////////////////////
+footer
+/////////////////////////////////////
+*/
+.icon{
+    background: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin:1%;
+    
+}
+.footer-center{
+    display: flex;
+    justify-content: center;
+}
+
+.about-bannar{
+    background:url("https://raw.githubusercontent.com/StartBootstrap/sb-clean-blog-angular/develop/src/assets/img/about-bg.jpg");
+    width: 100vw;
+    height: 65vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.footer-center p{
+    padding: 5%;
+}
+
+/*
+/////////////////////////////////////
+Login strip
+/////////////////////////////////////
+*/
+.strip p a{
+    display: inline-block;
+    color: #17a2b8;
+    padding: 1% 1.5% 1% 1.5%;
+    background-color: white;
+    border: 2px solid #17a2b8;
+    letter-spacing: 1.5px;
+    border-right: none;
+    position: fixed;
+    top: 100px;
+    right: 0px;
+}
+.strip p a:hover{
+    background-color: #17a2b8;
+    color: white;
+    text-decoration: none;
+}
+
+
+/*
+/////////////////////////////////////
+Login page
+/////////////////////////////////////
+*/
+
+.login-body{
+    background-color: #212529;
+}
+.login-body p{
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.login-body input{
+    height: 50px;
+    letter-spacing: 2px;
+    border: none;
+    width: 300px;
+    margin-right: 20px;
+}
+.login-body button{
+    height: 50px;
+    background-color: #106775;
+    color: rgba(255, 255, 255, 0.667);
+    width: 100px;
+    border: none;
+    letter-spacing: 2px;
+    
+}
+.login-body button:hover{
+    background-color: #135a65;
+}
+.form{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+
+}
+.password{
+    color: rgba(255, 255, 255, 0.49);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    position: relative;
+    right: 8.5%;
+}
