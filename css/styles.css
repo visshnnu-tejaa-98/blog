@@ -75,7 +75,9 @@ divider
 .divider{
     height: 100px;
 }
-
+.divider-special{
+    height: 60px;
+}
 
 /*
 /////////////////////////////////////
@@ -87,8 +89,12 @@ section
 }
 .article-description{
     font-size: 1.9rem;
+    font-weight: lighter;
 }
-.margin:hover{
+article{
+    padding-top: 5%;
+}
+article:hover{
     color: #17a2b8;
 }
 
@@ -177,7 +183,7 @@ Login page
     width: 300px;
     margin-right: 20px;
 }
-.login-body button{
+.login-body button, .new-post{
     height: 50px;
     background-color: #106775;
     color: rgba(255, 255, 255, 0.667);
@@ -186,7 +192,11 @@ Login page
     letter-spacing: 2px;
     
 }
-.login-body button:hover{
+.new-post a{
+    color: white;
+    text-decoration: none;
+}
+.login-body button:hover, .new-post:hover{
     background-color: #135a65;
 }
 .form{
@@ -202,4 +212,111 @@ Login page
     margin-top: 10px;
     position: relative;
     right: 8.5%;
+}
+
+
+.new-post{
+    width: 100px;
+    color: white;
+    height: 40px;
+    font-size: 0.7rem;
+    background-color: #178798;
+    margin-left: 20px;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+/*
+/////////////////////////////////////
+new-post form page
+/////////////////////////////////////
+*/
+
+
+.form-bg{
+    background-color: #343a40;
+}
+/* .form-middle{
+    display: flex;
+    justify-content: center;
+} */
+.form-middle p{
+    color: white;
+    font-weight: bolder;
+    font-size: 2rem;
+    margin-top: 100px;
+}
+.form-middle div input{
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    height: 50px;
+}
+.form-middle div textarea{
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.form-submit-btn{
+    margin-left: 0;
+    text-transform: uppercase;
+    width: 150px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.565);
+    font-size: 13px;
+}
+.form-container{
+    width: 50%;
+    margin: 0 25%;
+}
+
+.form-preview{
+    min-height: 50px;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.form-preview,.preview-text{
+    padding: 2%;
+    /* background-color: white; */
+    font-size: 5px;
+    color: black;
+}
+.form-middle .preview-text{
+    color: black;
+    background-color: white;
+    padding: 5%;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.singlePost-bannar{
+    background:url("https://raw.githubusercontent.com/StartBootstrap/sb-clean-blog-angular/develop/src/assets/img/post-bg.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+.singlePost-overlay{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.400);
+    position: relative;
+    color: white;
+    font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }

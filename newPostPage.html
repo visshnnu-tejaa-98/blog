@@ -1,16 +1,15 @@
 <!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <title>Blog</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>New Post</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/7f08385778.js" crossorigin="anonymous"></script>
-</head>
-<body>
+
+    <link rel="stylesheet" href="./css/styles.css">
+  </head>
+  <body class="form-bg">
     <!-- nav bar start-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -31,7 +30,7 @@
                             <a class="nav-link github-icon" href="https://github.com/visshnnu-tejaa-98/blog"><i class="fab fa-github"></i></a>
                         </li>
                         <li class="nav-item ">
-                            <button type="button" class="new-post bold hidden" id="new-post"><a href="./newPostPage.html">NEW POST</a></button>
+                            <button type="button" class="new-post bold hidden" id="new-post">NEW POST</button>
                         </li>
                     </ul>
                 </div>
@@ -40,68 +39,39 @@
     </nav>
     <!-- nav bar end-->
 
-
-
-    <!-- banner -->
-    <div class="bannar "></div>
-    <div class="bannar-overlay d-flex align-items-center d-flex justify-content-center">
-        <div class=" ">
-            <p class="bannar-heading bold">Clean Blog</p>
-            <p class="bannar-description">Blog Theme by Start Bootstrap</p>
+    <!-- form start -->
+    <div class="container form-container">
+        <div class=" form-middle">
+            <form>
+                <p>Post Content</p>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="heading" name="heading" placeholder="Post Heading">
+                    <small id="heading" class="form-text text-muted hidden">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="subheading" name="subheading" placeholder="Post Subheading">
+                    <small id="subheading" class="form-text text-muted hidden">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <input type="url" class="form-control" id="bg-url" placeholder="Post background image (enter url)">
+                    <small id="bg-ur" class="form-text text-light ">Use an image URL (ex. https://source.unsplash.com/WLUHO9A_xik/1600x900)</small>
+                </div>
+                <div class="form-group">
+                    <textarea name="postdiscription" id="postdiscription" class="form-control"rows="3" placeholder="Post Body Text"></textarea>
+                    <small id="bg-ur" class="form-text text-light  hidden">Use an image URL (ex. https://source.unsplash.com/WLUHO9A_xik/1600x900)</small>
+                </div>
+                <button type="submit" class="new-post form-submit-btn bold">Create post</button>
+            </form>
+            <p>Post Content</p>
+            <!-- <div class="form-control form-preview"> -->
+            <h3 class="preview-text" id="preview-text"></h3>
+            <!-- </div> -->
+                
         </div>
     </div>
-    <div class=" divider-special"></div>
-    <!-- section start -->
-    <section>
-        <div class="container d-flex justify-content-center">
-            <div class="margin" id="margin">
-
-                <!-- article start -->
-                <!-- <article>
-                    <h1 class="bold">Magna nostrud incididunt cupidatat cillum incididunt et nisi in ut minim reprehenderit.</h1>
-                    <p class="article-description">Labore irure irure laborum quis tempor aliqua. Dude</p>
-                    <i class="date">February 19, 2020</i>
-                </article> -->
-                <!-- article end -->
-            </div>
-        </div>
-    </section>
-    <!-- section end -->
-    <div class="divider"></div>
-    <!-- footer start -->
-    <footer>
-        <div class="container footer-center">
-            <div class="icon">
-                <i class=" fab fa-twitter"></i>
-            </div>
-            <div class="icon">
-                <i class=" fab fa-facebook-f"></i>
-            </div>
-            <div class="icon">
-                <i class=" fab fa-github"></i>
-            </div>
-        </div>
-        <br>
-        <div class="container footer-center">
-            <p class="text-muted">Copyright © Your Website 2020</p>
-        </div>
-    </footer>
-
-    <!-- footer end -->
-
-        <!-- try login button strip start -->
-        <div class="strip" id="strip">
-        <p class="bold"><a href="./login.html">TRY LOGING IN</a></p>
-        </div>
-    <!-- try login button strip end -->
+    <!-- form end -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <script src="./scripts/indexScript.js"></script>
-</body>
+    <script src="./scripts/newPostPageScript.js"></script>
+  </body>
 </html>
-
-
-
-
-
-
