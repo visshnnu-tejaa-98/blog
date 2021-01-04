@@ -320,3 +320,12 @@ new-post form page
     color: white;
     font-family: Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
+
+.icon a i{
+    color: white;
+}
+
+
+.icon:hover{
+    background-color: #17a2b8;
+}
